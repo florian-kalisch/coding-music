@@ -1,0 +1,14 @@
+with_fx :octaver do
+  with_fx :reverb do
+    
+    live_loop :guitar do
+      sample :guit_harmonics
+      sleep 1
+    end
+    
+    live_loop :kick do
+      sleep 0.5
+      sample :drum_heavy_kick, amp: 10
+    end
+  end
+end
